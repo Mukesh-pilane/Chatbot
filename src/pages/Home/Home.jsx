@@ -16,7 +16,7 @@ export default function Home() {
   const messageAreaRef = useRef();
 
   const [flag, setFlag] = useState(true)
-  const serverEndpoint = `http://localhost:5000/messages`;
+  const serverEndpoint = `https://chatbotapi-hw03.onrender.com/messages`;
   const {profilePicture} = useSelector((state) => state.user);
 const clientId = "1044924794976-n418rqsvep3iiaiecfsqlkf1jf5895is.apps.googleusercontent.com";
 const onFailure = () =>{

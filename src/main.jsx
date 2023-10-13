@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
-const clientId = "1044924794976-n418rqsvep3iiaiecfsqlkf1jf5895is.apps.googleusercontent.com"
+const clientId = "423801836330-a83v044m2fg4rbqusrd6t86d795mco2g.apps.googleusercontent.com"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

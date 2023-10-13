@@ -3,7 +3,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios"
 
 export const verify = createAsyncThunk('user/verify', ()=>{
-    return axios.get('http://localhost:5000/verify',{headers:{
+    return axios.get('https://chatbotapi-hw03.onrender.com',{headers:{
         "Authorization": localStorage.getItem('tokenId')
     }
     })
@@ -38,8 +38,8 @@ export const userSlice = createSlice({
         },
         [verify.fulfilled]: (state, action) => {
             state.isLoading = true;
-            state.user = action.payload.user;
-            state.profilePicture = action.payload.profilePicture
+            state.user = action?.payload?.user;
+            state.profilePicture = action?.payload?.profilePicture
         },
         [verify.rejected]: (state) => {
             state.isLoading = false;

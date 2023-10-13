@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 // const clientId = import.meta.env.REACT_APP_CLIENT_ID;
 import { GoogleLogin } from '@react-oauth/google';
 
-const clientId = "1044924794976-n418rqsvep3iiaiecfsqlkf1jf5895is.apps.googleusercontent.com"
+const clientId = "423801836330-a83v044m2fg4rbqusrd6t86d795mco2g.apps.googleusercontent.com"
 
 const Auth = () => {
   const navigate = useNavigate();
