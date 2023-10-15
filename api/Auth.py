@@ -4,7 +4,7 @@ from flask import request,jsonify
 # from config import CLIENTID
 from functools import wraps
 
-CLIENTID = "1044924794976-n418rqsvep3iiaiecfsqlkf1jf5895is.apps.googleusercontent.com"
+CLIENTID = "423801836330-a83v044m2fg4rbqusrd6t86d795mco2g.apps.googleusercontent.com"
 
 def verify_token(func):
     @wraps(func)
